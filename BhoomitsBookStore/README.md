@@ -52,3 +52,13 @@ Removed text-dark from the Line 23 and line 26
 2049
 Add additional property to footer and removed text-dark from the _LoginPartial.cshtml file
 
+2052
+Ran the application with the new theme Sketchy and it's look amazing :)
+
+Step 3:
+
+2057
+Additional stylesheets and scripts added to the _Layout.cshtml file which provide in the tutorial
+
+2058
+Add new dropdown menu to the _Layout.cshtml file
