@@ -7,7 +7,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BhoomitsBookStore.Controllers
+namespace BhoomitsBookStore.Area.Customer.Controllers
 {
     //Explicitly define that the controller is in the Customer Area
     [Area("Customer")]
