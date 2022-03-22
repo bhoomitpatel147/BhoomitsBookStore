@@ -14,4 +14,10 @@ Make sure to select the Individual Account Authentication and Enable Razor runti
 Reviewed the code of default ASP.NET Core Mvc application with individual account authentication
 
 1910
+Ran the application and review the default output with default css layout
 
+1930
+Remove Identity User Option for SignIn.RequireConfirmedAccount = true
+
+1945
+Already uploaded to the Github Repo
