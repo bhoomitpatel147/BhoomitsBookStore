@@ -132,3 +132,47 @@ Yeeeeeeeeeeh!!!!! I got no error Builded successfully and Display the default ap
 2229
 In Utility project create a static details class called SD.cs
 
+2232
+Change the properties of the SD class to the public static
+
+2233
+Add project refrence to the main project
+
+2235
+In the DataAccess project add project references to the Models and Utility
+
+2236
+Add customer area to areas
+
+Yeees Completed :)
+
+2239
+Change the routes in startup.cs like the one outlined in the ScaffoldingReadMe.txt
+
+2242
+Move the HomeController.cs to the Area/Customer/Controller and delete Data and Models folder
+
+2243
+Edit the HomeController.cs to explicitly define that the controller is in the Customer Area
+
+2248
+Move Views/Home to the Cutomer/Views folder
+
+2249
+Ran the application 
+
+It show me 
+Welcome
+Learn about building Web apps with ASP.NET Core. 
+?????????????
+
+2252
+Copy ViewImports and ViewStart files and paste in the Customer/Views folder and add path
+
+Now I Hope It will work perfectly fine
+
+Ran the application
+
+2253
+Yeeeeee Yes It successfully ran :)
+

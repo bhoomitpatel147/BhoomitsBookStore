@@ -9,8 +9,11 @@ using System.Threading.Tasks;
 
 namespace BhoomitsBookStore.Controllers
 {
+    //Explicitly define that the controller is in the Customer Area
+    [Area("Customer")]
     public class HomeController : Controller // Extends from Controller
     {
+
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
