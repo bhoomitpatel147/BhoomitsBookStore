@@ -21,3 +21,11 @@ Remove Identity User Option for SignIn.RequireConfirmedAccount = true
 
 1945
 Already uploaded to the Github Repo
+
+2035
+Now add two breakpoints to the HomeController.cs file for index and privacy page
+Breakpoint stop the code and we have to continue the code for next execution
+
+Its work successfully :)
+
+2038

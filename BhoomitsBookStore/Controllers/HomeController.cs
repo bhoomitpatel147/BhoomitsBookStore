@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BhoomitsBookStore.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : Controller // Extends from Controller
     {
         private readonly ILogger<HomeController> _logger;
 
@@ -17,7 +17,7 @@ namespace BhoomitsBookStore.Controllers
         {
             _logger = logger;
         }
-
+        // Two breakpoints added
         public IActionResult Index()
         {
             return View();
