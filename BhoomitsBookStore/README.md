@@ -62,3 +62,73 @@ Additional stylesheets and scripts added to the _Layout.cshtml file which provid
 
 2058
 Add new dropdown menu to the _Layout.cshtml file
+
+New Theme Applied SLATE
+
+2110
+THEME SLATE
+
+2111
+Change name Dropdown to the Content Management
+
+2112
+
+PART 1.4
+Add Project and Modify
+
+2123
+Add new three Class Library for the 
+BhoomitsBooks.DataAccess
+BhoomitsBooks.Models
+BhoomitsBooks.Utility
+
+2124
+Now copy the Data folder from the Original and paste into the .DataAccess
+Delete the original One
+
+2125
+Install the Microsoft.EntityFrameworkCore.Relational and Core.Sqlserver packages 
+
+2126
+Delete the Migration folder from the Original BhoomitsBook
+
+2129
+Install Identity.EntityFrameworkCore
+
+2130
+Modify the namespace to reflect the project
+
+2135
+Delete every class1.cs file from every class library
+
+2140
+Move Models folder into the BhoomitsBooks.Models and delete original
+
+2145
+Modify the Views/Shared/Error.cshtml file 
+
+2149
+Add Project refrence to the .DataAccess and .Models
+
+2150
+Rename the Models folder to the ViewModels
+
+2159
+Change the ErrorViewModels.cs namespace .Models.ViewModels
+
+2200
+Builded the project Oopssssss I got lots of error
+
+Change some data into the Startup.cs for data acceess using BhoomitsBookStore.DataAccess.Data;
+
+2215
+Change Error.cshtml and Controller/HomeController.cs file to access the Models by using BhoomitsBookStore.Models.ViewModels.ErrorViewModel
+
+2228
+Build the project 
+Yeeeeeeeeeeh!!!!! I got no error Builded successfully and Display the default application :)
+
+
+2229
+In Utility project create a static details class called SD.cs
+

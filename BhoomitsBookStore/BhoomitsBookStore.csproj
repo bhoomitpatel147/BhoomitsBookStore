@@ -8,11 +8,15 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.14" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.14" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.14" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.14" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.15" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BhoomitsBooks.DataAccess\BhoomitsBooks.DataAccess.csproj" />
+    <ProjectReference Include="..\BhoomitsBooks.Models\BhoomitsBooks.Models.csproj" />
   </ItemGroup>
 
 </Project>
