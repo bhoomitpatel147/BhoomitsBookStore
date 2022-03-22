@@ -29,3 +29,26 @@ Breakpoint stop the code and we have to continue the code for next execution
 Its work successfully :)
 
 2038
+Step 2:
+Add new Bootstrap to the application
+Go to the bootswatch.com and select unique theme for the application
+
+(: I choosed Sketchy THEME :)
+
+2041
+Downloaded the new bootstrap.css file for sketchy theme and replaced to the wwwroot/lib/bootstrap/dist/css and bootstrap.css
+
+2042
+Replaced the existing site.css file
+
+2043
+Change the link for the bootstrap in Views/Shared/_Layout.cshtml change the file name from bootstrap.min.css to the bootstrap.css which apply new sketchy theme
+
+2046
+Change the nav class from navbar-light to navbar-dark and bg-white to bg-primary in _Layout.cshtml
+2048
+Removed text-dark from the Line 23 and line 26
+
+2049
+Add additional property to footer and removed text-dark from the _LoginPartial.cshtml file
+
