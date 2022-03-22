@@ -181,3 +181,4 @@ Yeeeeee Yes It successfully ran :)
 Now Add Admin area
 
 2256
+Admin area added with some view files inside that :)
