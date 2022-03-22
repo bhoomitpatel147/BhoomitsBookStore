@@ -176,3 +176,8 @@ Ran the application
 2253
 Yeeeeee Yes It successfully ran :)
 
+2255
+
+Now Add Admin area
+
+2256
