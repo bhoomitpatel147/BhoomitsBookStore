@@ -264,3 +264,12 @@ Code will provide in next lecture
 
 0228
 Good Night :)
+
+1453
+Good Afternoon :)
+
+1454
+Now I added category code into the file and set the link for this file to the Dropdown menu to access directly from the home page
+
+1516
+Category link added to the _Layout.cshtml 
