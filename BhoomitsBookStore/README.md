@@ -220,3 +220,8 @@ Folder Repository added to th .DataAccess and inside this folder add one more fo
 
 2232
 Now update the .DataAccess csproj file for access the Repository 
+
+2335
+CategoryRepository and ICategoryRepository file create and code added to that file with some library
+
+2336

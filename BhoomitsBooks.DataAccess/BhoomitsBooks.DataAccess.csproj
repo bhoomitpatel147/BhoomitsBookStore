@@ -10,18 +10,13 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.15" />
   </ItemGroup>
 
-	<ImportGroup>
+ <ItemGroup>
 		<Folder Include="Data\" />
-		<Folder Include="Repository\IRepository\" />
-	</ImportGroup>      
+</ItemGroup>      
 	
   <ItemGroup>
     <ProjectReference Include="..\BhoomitsBooks.Models\BhoomitsBooks.Models.csproj" />
     <ProjectReference Include="..\BhoomitsBooks.Utility\BhoomitsBooks.Utility.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Repository\IRepository\" />
   </ItemGroup>
 
 </Project>
