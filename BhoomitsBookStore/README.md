@@ -209,3 +209,14 @@ Add Category table to the Model and do migration and update
 
 2227
 Finally Categories table added to the SQL SOE :) I am happy :)
+
+Section 2.2 Repository
+
+2229
+START 
+
+2231
+Folder Repository added to th .DataAccess and inside this folder add one more folder name IRepository
+
+2232
+Now update the .DataAccess csproj file for access the Repository 
