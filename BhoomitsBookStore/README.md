@@ -224,4 +224,27 @@ Now update the .DataAccess csproj file for access the Repository
 2335
 CategoryRepository and ICategoryRepository file create and code added to that file with some library
 
-2336
+0013
+All error finally solved I am Happy :)
+
+0014
+Now add one interface into the IRepository
+
+0023
+ISP_Call added to the repository IRepository
+
+0024
+Now add SP_Call class file to the Repository folder and lots of code
+All error solved no error fine:)
+
+0056
+Now add one more interface Called IUnitOfWork in the IRepository folder
+
+0057
+Now add UnitOfWork file to the Repository folder and add some code for ISP_Call and Category
+
+0115
+UnitOfWork Code successfully add without any error
+Build the application No error found I am happy :)
+
+
