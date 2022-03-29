@@ -4,9 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Linq.Expressions;
-using System.Threading.Tasks;
+using System.Text;
 
 namespace BhoomitsBooks.DataAccess.Repository
 {
@@ -87,6 +86,11 @@ namespace BhoomitsBooks.DataAccess.Repository
         public void RemoveRange(IEnumerable<T> entity)
         {
             dbSet.RemoveRange(entity);
+        }
+
+        void IRepository<T>.remove(T entity)
+        {
+            throw new NotImplementedException();
         }
     }
 }
