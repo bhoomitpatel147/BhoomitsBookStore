@@ -206,3 +206,6 @@ Sql Server Object explorer reviewed completly fine :)
 
 2210
 Add Category table to the Model and do migration and update
+
+2227
+Finally Categories table added to the SQL SOE :) I am happy :)
