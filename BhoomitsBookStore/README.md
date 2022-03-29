@@ -182,3 +182,19 @@ Now Add Admin area
 
 2256
 Admin area added with some view files inside that :)
+
+
+PART 2:
+
+
+Section 2.1 Create the DB 
+
+2118
+
+Assignment 2.2
+
+Checked the application and it is perfect working without any error :)
+
+2122
+Reviewed the appsetting.json file which is automatically set to the localDB server
+
