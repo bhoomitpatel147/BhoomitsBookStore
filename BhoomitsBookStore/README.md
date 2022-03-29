@@ -198,3 +198,11 @@ Checked the application and it is perfect working without any error :)
 2122
 Reviewed the appsetting.json file which is automatically set to the localDB server
 
+2156
+Migration Completed
+
+2201
+Sql Server Object explorer reviewed completly fine :)
+
+2210
+Add Category table to the Model and do migration and update
