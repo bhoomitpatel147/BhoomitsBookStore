@@ -1,3 +1,5 @@
+using BhoomitsBooks.DataAccess.Repository.IRepository;
+using BhoomitsBookStore.Models;
 using BhoomitsBookStore.DataAccess.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -34,6 +36,7 @@ namespace BhoomitsBookStore
 
             services.AddDefaultIdentity<IdentityUser>() // Option Line removed
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddScoped<IUnitOfWork, BhoomitsBooks.DataAccess.Repository.UnitOfWork>();
             services.AddControllersWithViews();
         }
 

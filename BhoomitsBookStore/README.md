@@ -247,4 +247,20 @@ Now add UnitOfWork file to the Repository folder and add some code for ISP_Call 
 UnitOfWork Code successfully add without any error
 Build the application No error found I am happy :)
 
+0130
+Startup.cs file updated for IUnitOfWork and error solved
 
+Session 2.3 Category CRUD
+
+0132
+Made controller for Admin are 
+CategoryController.cs in Admin
+
+0225
+Make One Folder in View of Admin folder name Category
+Add one view file name Index.cshtml file
+
+Code will provide in next lecture
+
+0228
+Good Night :)
