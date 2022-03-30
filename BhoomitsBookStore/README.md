@@ -273,3 +273,9 @@ Now I added category code into the file and set the link for this file to the Dr
 
 1516
 Category link added to the _Layout.cshtml 
+
+0117
+Added _CreateAndBackToListButton to the shared folder
+
+0131
+Upsert.cshtml file updated 
