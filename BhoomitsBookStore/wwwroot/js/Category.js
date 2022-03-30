@@ -24,7 +24,7 @@ function loadDataTable() {
                   </a>
                   </div>
                      `;
-                }, "width" : "40%"
+                },
             }
         ]
     });
@@ -44,11 +44,11 @@ function Delete(url) {
                 url: url,
                 success: function (data) {
                     if (data.success) {
-                        toastr.success(data.message);
+                        toastr.success(data.message, "Delete Successful");
                         dataTable.ajax.reload();
                     }
                     else {
-                        toastr.error(data.message);
+                        toastr.error(data.message,"Error While deleting");
                     }
                 }
             });
