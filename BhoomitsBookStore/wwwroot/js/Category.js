@@ -5,7 +5,7 @@ $(document).ready(function () {
 });
 
 function loadDataTable() {
-    dataTable = $('#tbldata').DataTable({
+    dataTable = $('#tblData').DataTable({
         "ajax": {
             "url": "/Admin/Category/GetAll"
         },
@@ -13,7 +13,7 @@ function loadDataTable() {
             { "data": "name", "width": "60%" },
             {
                 "data": "id",
-                "reder": function (data) {
+                "render": function (data) {
                     return `
                  <div class="text-center">
                      <a href="/Admin/Category/Upsert/${data}" class="btn btn-success text-white" style="cursor:pointer">
@@ -24,7 +24,7 @@ function loadDataTable() {
                   </a>
                   </div>
                      `;
-                }
+                }, "width" : "40%"
             }
         ]
     });
