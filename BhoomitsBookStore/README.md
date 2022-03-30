@@ -199,6 +199,7 @@ Checked the application and it is perfect working without any error :)
 Reviewed the appsetting.json file which is automatically set to the localDB server
 
 2156
+20220329015441_AddDefaultIdentityMigration
 Migration Completed
 
 2201
