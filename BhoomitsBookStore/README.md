@@ -317,3 +317,33 @@ Now It's time to push CoverType to the Database (Create migration and update the
 
 20220402050328_AddCoverTypeToDb 
 Now CoverType added to the Db and migration is completed at 105
+
+
+0106
+Now time to perform CRUD operations on Cover Type
+
+0107
+Now add Cover type to NavBar
+
+0110
+Now create Upser Index file in the Admin area
+
+0115
+Now make js for CoverType
+
+Make one controller for the CoverType same as past Category
+
+0134
+Now check the application and run
+Ran successfull without any error
+
+0139
+Added cover type
+Updated Covertype
+Deleted Covertype
+Everything is Fine :)
+
+0140
+Part 3.1 finished
+
+
