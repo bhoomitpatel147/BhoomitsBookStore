@@ -284,3 +284,36 @@ Upsert.cshtml file updated
 
 0449
 Finally Everything done application Assignment2 completed :)
+
+
+
+*******************************************
+*******************************************
+**************PART 3:**********************
+*******************************************
+*******************************************
+
+
+Date: 2022-04-02
+
+0010
+Build the project 
+
+Part 3.1 : Cover Type CRUD
+
+
+029
+CoverType.cs file created in the Model folder
+with the property name ID and Name
+
+058
+Add CoverTypeRepository Class
+059
+Add ICoverTypeRepository Interface
+Add CoverType to UnitOfWork And IUnitOfWork
+
+100
+Now It's time to push CoverType to the Database (Create migration and update the DB)
+
+20220402050328_AddCoverTypeToDb 
+Now CoverType added to the Db and migration is completed at 105
