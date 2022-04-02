@@ -346,4 +346,15 @@ Everything is Fine :)
 0140
 Part 3.1 finished
 
+0141
+Part 3.2 Product CRUD
+
+0150
+Now add one class name Product in the Models
+
+0151
+Add reference to the new Product piece to the database in the ApplicationDbContext.cs
+
+0156
+20220402055436_addProductToDb added to the database and migration is completed
 
