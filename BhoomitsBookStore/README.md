@@ -358,3 +358,11 @@ Add reference to the new Product piece to the database in the ApplicationDbConte
 0156
 20220402055436_addProductToDb added to the database and migration is completed
 
+Date 2022-04-04
+
+2218
+Now Update the product class so Title, ISBN and Author are required and create a new migration name addValidationToProduct and update the database
+
+2224
+20220405022117_addValidationToProduct added new validation to product successfully 
+
