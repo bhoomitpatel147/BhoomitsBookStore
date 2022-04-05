@@ -1,5 +1,7 @@
 ﻿using BhoomitsBooks.DataAccess.Repository.IRepository;
+using BhoomitsBooks.Models.ViewModels;
 using BhoomitsBooks.Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Hosting;
 using System;
@@ -27,18 +29,32 @@ namespace BhoomitsBookStore.Areas.Admin.Controllers
 
         public IActionResult Upsert(int? id)
         {
-            Product product = new Product();
-            if (id == null)
+            ProductVM productVM = new ProductVM()
             {
-                return View(product);
-            }
-
-            product = _unitOfWork.Product.Get(id.GetValueOrDefault());
-            if (product == null)
+                Product = new Product(),
+                CategoryList = _unitOfWork.Category.GetAll().Select(i => new SelectListItem
+                {
+                    Text = i.Name,
+                    Value = i.Id.ToString()
+                }),
+                CoverTypeList = _unitOfWork.CoverType.GetAll().Select(i => new SelectListItem
+                {
+                    Text = i.Name,
+                    Value = i.Id.ToString()
+                }),
+            };   // using BhoomitBooks.Models;
+            if(id == null)
             {
-                return NotFound(product);
+                // this is for create
+                return View(productVM);
             }
-            return View(product);
+            // this is for edit
+            productVM.Product = _unitOfWork.Product.Get(id.GetValueOrDefault());
+            if(productVM.Product == null)
+            {
+                return NotFound();
+            }
+            return View(productVM);
         }
 
         [HttpPost]
@@ -46,22 +62,21 @@ namespace BhoomitsBookStore.Areas.Admin.Controllers
         public IActionResult Upsert(Product product)
         {
             if (ModelState.IsValid)
-            {
+               {
                 if (product.Id == 0)
-                {
+                    {
                     _unitOfWork.Product.Add(product);
                     _unitOfWork.Save();
-                }
+                    }
                 else
                 {
                     _unitOfWork.Product.Update(product);
                 }
-                _unitOfWork.Save();
+                    _unitOfWork.Save();
                 return RedirectToAction(nameof(Index));
-
-            }
-            return View(product);
-        }
+                }
+                return View(product);
+        } 
 
 
         // API Calls
@@ -70,8 +85,8 @@ namespace BhoomitsBookStore.Areas.Admin.Controllers
 
         public IActionResult GetAll()
         {
-            //return NotFound
-            var allObj = _unitOfWork.Product.GetAll();
+            //return NotFound();
+            var allObj = _unitOfWork.Product.GetAll(includeProperties:"Category, CoverType");
             return Json(new { data = allObj });
 
         }

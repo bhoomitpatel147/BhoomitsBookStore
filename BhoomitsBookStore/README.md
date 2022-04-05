@@ -374,3 +374,36 @@ Now add one view model name ProductVM in the Model project
 
 2250
 Now time to add one package name Microsoft.AspNetCore.Mvc.ViewFetures 
+
+2256
+ProductVM.cs file modefied 
+
+2330
+Now Modify the ProductController the IActionResult Upsert calls to the ProductVM view model, include the using statements to the viewModels folder and Microsoft.AspNetCore.Mvc.Rendering
+
+2331
+Comment out the Upsert post method for temperary
+
+2332
+Modify the API call to include the Category and CoverType properties
+
+0002
+Now add index page for the Product page
+Make one Js file for Product and change the table data to load all title,price,author,categoryName etc.....
+
+0003
+Now add product page link to the _Layout.cshtml file to access from the home page content manangement
+
+
+0004
+Now time to run the Application
+
+
+0147
+Now add Upsert for Product and add Index.cshtml file for the Product 
+
+0148
+I got lots of error but finally it is work perfectly fine :)
+
+0149
+Time to push the code into the Github.................
