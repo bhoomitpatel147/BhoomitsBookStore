@@ -1,4 +1,4 @@
-﻿@model BhoomitsBooks.Models.ViewModels.ProductVM;
+﻿@model BhoomitsBooks.Models.ViewModels.ProductVM
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
     var title = "Create Product";
@@ -76,7 +76,7 @@
                     Cover Type
                 </div>
                 <div class="col-8">
-                    @Html.DropDownListFor(m => m.Product.CategoryId, Model.CoverTypeList, "-Select a Cover Type",
+                    @Html.DropDownListFor(m => m.Product.CoverTypeId, Model.CoverTypeList, "-Select a Cover Type",
                    new { @class = "form-control" })
                     <span asp-validation-for="Product.CoverTypeId" class="text-danger"></span>
                 </div>
@@ -95,16 +95,9 @@
                     {
                         <partial name="_EditAndBackToListButton" model="Model.Product.Id" />
                     }
-                    else
+                     else
                     {
-                        <div class="row">
-                            <div class="col">
-                                <button type="submit" onclick="return validateInput()" class="btn btn-primary form-control">Create</button>
-                            </div>
-                            <div class="col">
-                                <a asp-action="Index" class="btn btn-success form-control">Back to List</a>
-                            </div>
-                        </div>
+                        <partial name="_CreateAndBackToListButton" />
                     }
                 </div>
             </div>
