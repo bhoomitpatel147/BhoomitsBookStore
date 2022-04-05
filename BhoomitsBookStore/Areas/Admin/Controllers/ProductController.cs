@@ -1,8 +1,8 @@
 ﻿using BhoomitsBooks.DataAccess.Repository.IRepository;
-using BhoomitsBooks.Models.ViewModels;
 using BhoomitsBooks.Models;
-using Microsoft.AspNetCore.Mvc.Rendering;
+using BhoomitsBooks.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Hosting;
 using System;
 using System.Collections.Generic;
@@ -66,7 +66,6 @@ namespace BhoomitsBookStore.Areas.Admin.Controllers
                 if (product.Id == 0)
                     {
                     _unitOfWork.Product.Add(product);
-                    _unitOfWork.Save();
                     }
                 else
                 {
