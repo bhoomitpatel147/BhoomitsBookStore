@@ -366,3 +366,11 @@ Now Update the product class so Title, ISBN and Author are required and create a
 2224
 20220405022117_addValidationToProduct added new validation to product successfully 
 
+2248
+Now add Controller for thr Product and modify the code to add enviornment to the Controller
+
+2249
+Now add one view model name ProductVM in the Model project
+
+2250
+Now time to add one package name Microsoft.AspNetCore.Mvc.ViewFetures 
