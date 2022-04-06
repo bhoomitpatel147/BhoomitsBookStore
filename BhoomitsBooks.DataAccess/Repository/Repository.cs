@@ -10,7 +10,7 @@ using System.Text;
 namespace BhoomitsBooks.DataAccess.Repository
 {
     // Implements all the methods of the IRepository
-     public class Repository<T> : IRepository<T> where T : class
+    public class Repository<T> : IRepository<T> where T : class
     {
         // modify the database w/ the db context
         private readonly ApplicationDbContext _db;      // get the db instance using the constructor and DI 
@@ -40,13 +40,13 @@ namespace BhoomitsBooks.DataAccess.Repository
 
             if (includeProperties != null)
             {
-                foreach(var includeProp in includeProperties.Split(new char[] {  ','}, StringSplitOptions.RemoveEmptyEntries))
+                foreach (var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                 {
                     query = query.Include(includeProp);
                 }
             }
 
-            if(orderBy != null)
+            if (orderBy != null)
             {
                 return orderBy(query).ToList();
             }
