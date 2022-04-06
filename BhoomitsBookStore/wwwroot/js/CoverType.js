@@ -10,7 +10,7 @@ function loadDataTable() {
             "url": "/Admin/CoverType/GetAll"
         },
         "columns": [
-            { "data": "name", "width": "60%" },
+            { "data": "name", "width": "60%", "class": "text-dark" },
             {
                 "data": "id",
                 "render": function (data) {
