@@ -1,16 +1,16 @@
 ﻿@model BhoomitsBooks.Models.ViewModels.ProductVM
 
 @{ Layout = "~/Views/Shared/_Layout.cshtml";
-                var title = "Create Product"; }
+    var title = "Create Product"; }
 
 <form method="post" enctype="multipart/form-data">
     <div class="row p-3 border">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        @if (Model.Product.Id != 0)
+        @if (Model.Product.Id != 0)       // if this value is null it will not display 'Edit Category', change to  0
         {
             // edit
             title = "Edit Product";
-<input type="hidden" asp-for="Product.Id" />}
+            <input type="hidden" asp-for="Product.Id" />}
         <div class="col-12 border-bottom">
             <h2 class="text-primary">@title</h2>
         </div>
@@ -48,7 +48,6 @@
                 </div>
                 <div class="col-8">
                     <textarea asp-for="Product.Description" class="form-control"></textarea>
-                    <span asp-validation-for="Product.Author" class="text-danger"></span>
                 </div>
             </div>
             <div class="form-group row">
@@ -66,7 +65,7 @@
                 </div>
                 <div class="col-8">
                     @Html.DropDownListFor(m => m.Product.CategoryId, Model.CategoryList, "-Select a Category",
-                        new { @class = "form-control" })
+                   new { @class = "form-control" })
                     <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
                 </div>
             </div>
@@ -76,7 +75,7 @@
                 </div>
                 <div class="col-8">
                     @Html.DropDownListFor(m => m.Product.CoverTypeId, Model.CoverTypeList, "-Select a Cover Type",
-                        new { @class = "form-control" })
+                   new { @class = "form-control" })
                     <span asp-validation-for="Product.CoverTypeId" class="text-danger"></span>
                 </div>
             </div>
@@ -92,28 +91,22 @@
                 <div class="col-8 offset-4">
                     @if (Model.Product.Id != 0)
                     {
-        <partial name="_EditAndBackToListButton" model="Model.Product.Id" /> }
+                        <partial name="_EditAndBackToListButton" model="Model.Product.Id" /> }
                     else
                     {
-        <div class="row">
-            <div class="col">
-                <button type="submit" onclick="return validateInput()" class="btn btn-primary form-control">Create</button>
-            </div>
-            <div class="col">
-                <a asp-action="Index" class="btn btn-success form-control">Back to List</a>
-            </div>
-        </div>}
+                        <div class="row">
+                            <div class="col">
+                                <button type="submit" onclick="return validateInput()" class="btn btn-primary form-control">Create</button>
+                            </div>
+                            <div class="col">
+                                <a asp-action="Index" class="btn btn-success form-control">Back to List</a>
+                            </div>
+                        </div>}
                 </div>
             </div>
         </div>
-        @if (Model.Product.Id != 0)
-        {
-<div class="col-3 offset-1 pt-4">
-    <img src="@Model.Product.ImageUrl" width="100%" style="border-radius:5px; border:1px solid #bbb9b9" />
-</div>            }
     </div>
 </form>
-
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
     <script src="https://cdn.tiny.cloud/1/trq9mo3e40yrfesadz7kq3s6nkzssa3oug4tihiu356v8vhn/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
@@ -128,8 +121,7 @@
             menubar: 'file edit format'
         });
         function validateInput() {
-            if (document.getElementById("uploadBox").value = "") {
-                alert('ckc');
+            if (document.getElementById("uploadBox").value == "") {
                 swal("Error", "Please select an image", "error");
                 return false;
             }

@@ -8,9 +8,13 @@
 
   <ItemGroup>
     <Compile Remove="Controllers\**" />
+    <Compile Remove="wwwroot\images\**" />
     <Content Remove="Controllers\**" />
+    <Content Remove="wwwroot\images\**" />
     <EmbeddedResource Remove="Controllers\**" />
+    <EmbeddedResource Remove="wwwroot\images\**" />
     <None Remove="Controllers\**" />
+    <None Remove="wwwroot\images\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,10 +34,6 @@
     <ProjectReference Include="..\BhoomitsBooks.DataAccess\BhoomitsBooks.DataAccess.csproj" />
     <ProjectReference Include="..\BhoomitsBooks.Models\BhoomitsBooks.Models.csproj" />
     <ProjectReference Include="..\BhoomitsBooks.Utility\BhoomitsBooks.Utility.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\images\products\" />
   </ItemGroup>
 
 </Project>
