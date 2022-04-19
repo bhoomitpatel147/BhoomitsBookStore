@@ -435,3 +435,6 @@ Now It's time to move for part 4 to show the product to the index home page of t
 
 0145
 Now don't forget to add the git changes:)
+
+1441
+20220419183736_lastValidationToProduct for adding the covertypeID foreign key :)
