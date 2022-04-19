@@ -10,16 +10,16 @@ function loadDataTable() {
             "url": "/Admin/Product/GetAll"
         },
         "columns": [
-            { "data": "title", "width": "15%", "class": "text-dark" },
-            { "data": "isbn", "width": "15%", "class": "text-dark" },
-            { "data": "listPrice", "width": "15%", "class": "text-dark" },
-            { "data": "author", "width": "15%", "class": "text-dark" },
-            { "data": "category.name", "width": "15%", "class": "text-dark" },
+            { "data": "title", "width": "15%", "class": "text-white bg-secondary" },
+            { "data": "isbn", "width": "15%", "class": "text-white bg-secondary" },
+            { "data": "listPrice", "width": "15%", "class": "text-white bg-secondary" },
+            { "data": "author", "width": "15%", "class": "text-white bg-secondary" },
+            { "data": "category.name", "width": "15%", "class": "text-white bg-secondary" },
             {
                 "data": "id",
                 "render": function (data) {
                     return `
-                 <div class="text-center">
+                 <div class="text-center text-white bg-secondary">
                      <a href="/Admin/Product/Upsert/${data}" class="btn btn-success text-white" style="cursor:pointer">
                          <i class="fas fa-edit"></i>&nbsp;
                       </a>

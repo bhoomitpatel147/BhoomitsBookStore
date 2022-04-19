@@ -10,12 +10,12 @@ function loadDataTable() {
             "url": "/Admin/CoverType/GetAll"
         },
         "columns": [
-            { "data": "name", "width": "60%", "class": "text-dark" },
+            { "data": "name", "width": "60%", "class": "text-white bg-secondary" },
             {
                 "data": "id",
                 "render": function (data) {
                     return `
-                 <div class="text-center">
+                 <div class="text-center text-white bg-secondary">
                      <a href="/Admin/CoverType/Upsert/${data}" class="btn btn-success text-white" style="cursor:pointer">
                          <i class="fas fa-edit"></i>&nbsp;
                       </a>
