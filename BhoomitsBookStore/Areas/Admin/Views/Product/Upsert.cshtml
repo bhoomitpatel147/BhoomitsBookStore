@@ -114,26 +114,27 @@
     </div>
 </form>
 
-@section Scripts{
+@section Scripts {
     <partial name="_ValidationScriptsPartial" />
-    <script src="https://cdn.tiny.cloud/1/n94ifuzvl80pchikopiwgz2esrw8n28dwcywvpejlqrregfp/tinymce/5/tinymce.min.js"></script>
+    <script src="https://cdn.tiny.cloud/1/trq9mo3e40yrfesadz7kq3s6nkzssa3oug4tihiu356v8vhn/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+
+
 
     <script>
-
         tinymce.init({
             selector: 'textarea',
             plugins: 'lists',
             menubar: 'file edit format'
         });
-
-
         function validateInput() {
-            if (document.getElementById("uploadBox").value == "") {
+            if (document.getElementById("uploadBox").value = "") {
+                alert('ckc');
                 swal("Error", "Please select an image", "error");
                 return false;
             }
             return true;
         }
-
     </script>
+
 }
