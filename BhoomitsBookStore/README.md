@@ -438,3 +438,10 @@ Now don't forget to add the git changes:)
 
 1441
 20220419183736_lastValidationToProduct for adding the covertypeID foreign key :)
+
+1514
+I added extra link in the ValidationScriptPartial so 
+So Whenever I tried to skip the image then it will show data but in that application should show a warning that please select an image for submit form
+
+1515
+Now I solved this error and now it is work perfectly fine 
