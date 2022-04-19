@@ -91,6 +91,8 @@ namespace BhoomitsBooks.DataAccess.Migrations
 
                     b.HasIndex("CategoryId");
 
+                    b.HasIndex("CoverTypeId");
+
                     b.ToTable("Products");
                 });
 
@@ -304,7 +306,7 @@ namespace BhoomitsBooks.DataAccess.Migrations
 
                     b.HasOne("BhoomitsBooks.Models.CoverType", "CoverType")
                         .WithMany()
-                        .HasForeignKey("CategoryId")
+                        .HasForeignKey("CoverTypeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

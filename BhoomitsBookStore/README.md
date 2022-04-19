@@ -407,3 +407,31 @@ I got lots of error but finally it is work perfectly fine :)
 
 0149
 Time to push the code into the Github.................
+
+
+
+******************************************************************
+******************************************************************
+**********************PART 4**************************************
+******************************************************************
+******************************************************************
+
+Date : 2022-04-19
+
+0013
+In the past I solved each and every error and I ran the code with the product data as well
+
+0014
+Lets check the code that is working perfectly fine or not ?
+
+0142
+Opppssss I tried too much but at the end I found the solution for the product data fetching
+
+0143
+I changed the foreign key for covertype and it solve the error boomm :)
+
+0144
+Now It's time to move for part 4 to show the product to the index home page of the bookstore
+
+0145
+Now don't forget to add the git changes:)

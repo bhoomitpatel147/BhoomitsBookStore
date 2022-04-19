@@ -1,14 +1,12 @@
-﻿@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+﻿@{ Layout = "~/Views/Shared/_Layout.cshtml"; }
 
 <br />
 <div class="row">
     <div class="col-6">
-        <h2 class="text-primary">Product List</h2>
+        <h2 class="text-primary">Product List </h2>
     </div>
-    <div class="col-6">
-        <a class="btn btn-primary" asp-action="Upsert"><i class="fas fa-plus"></i>&nbsp; Create New Product</a>
+    <div class="col-6 text-right">
+        <a class="btn btn-primary" asp-action="Upsert"><i class="fas fa-plus"></i> &nbsp; Create New Product</a>
     </div>
 </div>
 
@@ -29,7 +27,6 @@
 </div>
 
 @section Scripts{
+
     <script src="~/js/Product.js"></script>
 }
-
-

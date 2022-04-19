@@ -11,6 +11,6 @@ namespace BhoomitsBooks.DataAccess.Repository.IRepository
     public interface IProductRepository : IRepository<Product>
     {
         public void Update(Product product);
-        public void Remove(Product objFromDb);
+        public void Remove(Product product);
     }
 }
