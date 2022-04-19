@@ -445,3 +445,43 @@ So Whenever I tried to skip the image then it will show data but in that applica
 
 1515
 Now I solved this error and now it is work perfectly fine 
+
+
+1520
+Now it's time to change the product controller file for fetch the image file with name and extension 
+and save in the wwwroot/images/products folder
+
+1521
+Yes I save the data in the product folder with the random name
+
+Now its time to add this data in to the index home page:)
+
+1523
+
+Now change the data in customer field
+and change 
+
+1607
+
+Main  change is the Homecontroller.cs file otherwise we can not fetch data from the database
+
+
+I added every thing fine 
+
+I ran the code
+
+1608
+
+Yesssss It work perfectly fine :)....................
+
+I fetch data in the desktop index file of customer view
+
+1609
+Now it time to save change in the github 
+
+1610
+Now I tried to delete data in the product page but I can not
+
+1611
+I will work on this code after my job so saved the changes and byeeeeeeeeeeeee :)
+
