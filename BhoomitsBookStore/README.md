@@ -485,3 +485,20 @@ Now I tried to delete data in the product page but I can not
 1611
 I will work on this code after my job so saved the changes and byeeeeeeeeeeeee :)
 
+
+0138
+I added new items in the product field like price price50 price100 etc..
+
+0139
+Now I have to add migration and update the data base
+
+0202
+Now Added every proerty and I added code for that in the Upsert file and change the ProductRepository :)
+
+0203
+Yess.. It is work perfectly fine:).......
+
+
+0204
+
+Now it time to submit the code in the github :)

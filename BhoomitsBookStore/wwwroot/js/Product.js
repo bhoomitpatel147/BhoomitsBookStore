@@ -12,7 +12,7 @@ function loadDataTable() {
         "columns": [
             { "data": "title", "width": "15%", "class": "text-white bg-secondary" },
             { "data": "isbn", "width": "15%", "class": "text-white bg-secondary" },
-            { "data": "listPrice", "width": "15%", "class": "text-white bg-secondary" },
+            { "data": "price", "width": "15%", "class": "text-white bg-secondary" },
             { "data": "author", "width": "15%", "class": "text-white bg-secondary" },
             { "data": "category.name", "width": "15%", "class": "text-white bg-secondary" },
             {

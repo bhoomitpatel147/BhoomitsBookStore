@@ -35,6 +35,9 @@ namespace BhoomitsBooks.DataAccess.Repository
                 objFromDb.ListPrice = product.ListPrice;
                 objFromDb.CategoryId = product.CategoryId;
                 objFromDb.CoverTypeId = product.CoverTypeId;
+                objFromDb.Price = product.Price;
+                objFromDb.Price50 = product.Price50;
+                objFromDb.Price100 = product.Price100;
 
 
             }
